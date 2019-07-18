@@ -1,0 +1,83 @@
+*{
+  /* These values are used here specifically to keep the menu in the proper spot on the display and are not required to create the menu.*/
+  padding:0;
+  margin:0;
+
+}
+
+#nav ul{
+  list-style:none;
+  font-family:new, monospace;
+  font-weight:bold;
+  text-align:left;
+  width:150px;
+}
+
+#nav a:link, a:visited{
+  background-color:#FEF958;
+  border-bottom:1px solid #efecca;
+  color:#1369FE;
+  display:block;
+  text-decoration:none;
+  padding:8px 15px;
+}
+
+#nav a:hover{
+  background-color:#FE1313;
+  color:#FEFEFE;
+}
+
+#nav a:active{
+  background-color:#a7a37e;
+}
+
+
+.h1 {
+  font-style: courier, monospace;
+}
+.pug1 {
+ width: 1px;;
+border-radius: 50%;
+ border: 10px solid blue;
+
+}
+
+.bg {
+  border: 10px solid blue;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+
+
+
+
+
+body {
+  padding: 50px;
+}
+#spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
